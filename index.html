@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,30 +10,82 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Easybank landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="main.js"></script>
+    <title>EasyBank Landing Page</title>
   </head>
   <body>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
-      <button>Request Invite</button>
-    </nav>
-    <header>
-      <h1>Next generation digital banking</h1>
+      <div class="fixed inset-x-0 z-50 bg-white">
+        <div
+          class="container z-50 mx-auto flex items-center justify-between px-6 py-[1.375rem] lg:h-20 lg:px-7 lg:py-0 xl:px-[10.313rem]"
+        >
+          <a href="#"><img src="./images/logo.svg" alt="EasyBank logo" /></a>
+          <ul
+            class="absolute inset-x-6 top-[5.5rem] z-50 mx-auto flex max-w-md origin-top scale-y-0 flex-col items-center gap-6 rounded bg-white py-8 text-center text-lg text-darkBlue transition-all duration-300 ease-out lg:relative lg:inset-x-0 lg:top-0 lg:h-full lg:scale-y-100 lg:flex-row lg:gap-[1.875rem] lg:py-0 lg:text-sm lg:text-grayBlue"
+            id="nav-menu"
+          >
+            <li class="lg:linkContainer">
+              <a href="#" class="lg:after:linkUnderline hover:text-darkBlue"
+                >Home</a
+              >
+            </li>
+            <li class="lg:linkContainer">
+              <a href="#" class="lg:after:linkUnderline hover:text-darkBlue"
+                >About</a
+              >
+            </li>
+            <li class="lg:linkContainer">
+              <a href="#" class="lg:after:linkUnderline hover:text-darkBlue"
+                >Contact</a
+              >
+            </li>
+            <li class="lg:linkContainer">
+              <a href="#" class="lg:after:linkUnderline hover:text-darkBlue"
+                >Blog</a
+              >
+            </li>
+            <li class="lg:linkContainer">
+              <a href="#" class="lg:after:linkUnderline hover:text-darkBlue"
+                >Careers</a
+              >
+            </li>
+          </ul>
 
+          <button class="button hidden lg:block">Request Invite</button>
+          <button
+            class="hamburger focus:outline-none lg:hidden"
+            id="hamburger-menu"
+          >
+            <span class="hamburger-top"></span
+            ><span class="hamburger-middle"></span
+            ><span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </div>
+      <!-- Menu overlay -->
+      <div
+        class="to-[rgba(45, 49, 77, 0.0001) 100%)] fixed inset-0 z-10 origin-top scale-y-0 bg-gradient-to-b from-darkBlue transition-all duration-300 ease-out"
+        id="overlay"
+      ></div>
+    </nav>
+
+    <header class="hidden">
+      <h1>Next generation digital banking</h1>
       <p>
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>
       <button>Request Invite</button>
     </header>
-    <main>
+
+    <main class="hidden">
       <section>
         <h2>Why choose Easybank?</h2>
         <p>
@@ -100,7 +151,8 @@
         </article>
       </section>
     </main>
-    <footer>
+
+    <footer class="hidden">
       <ul>
         <li>About Us</li>
         <li>Contact</li>
