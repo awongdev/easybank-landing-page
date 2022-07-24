@@ -17,4 +17,5 @@ hamburgerMenu.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
   toggleMenu();
+  
 });

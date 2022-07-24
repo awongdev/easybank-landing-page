@@ -6,7 +6,7 @@
   html {
     font-family: 'Public Sans', sans-serif;
   }
-  .linkUnderline {
+  .link-underline {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -16,15 +16,33 @@
     transform: scaleX(0);
     transition: transform 300ms ease;
   }
-  .linkUnderline:hover {
+  .link-underline:hover {
     transform: scaleX(1);
   }
-  .linkContainer {
+  .link-container {
     position: relative;
     display: flex;
     height: 100%;
     align-items: center;
   }
+  .section-header {
+    @apply text-[2rem] font-light tracking-tight text-darkBlue lg:text-[2.5rem];
+  }
+  .info-header {
+    @apply mb-4 text-xl font-light text-darkBlue lg:mb-[1.625rem] lg:text-2xl;
+  }
+  .info-text {
+    @apply text-[0.938rem] text-grayBlue lg:text-base;
+  }
+  .info-container {
+    @apply max-w-[30.438rem];
+  }
+  .info-icon {
+    @apply mx-auto mb-6 lg:mx-0 lg:mb-10;
+  }
+}
+.link-transition {
+  transition: color 300ms ease-out;
 }
 
 .button {
@@ -68,7 +86,6 @@
   transform: rotate(90deg);
   transform: translateY(0px);
 }
-
 .open .hamburger-top {
   transform: rotate(45deg) translateY(5px) translate(5px);
 }
