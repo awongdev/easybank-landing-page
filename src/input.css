@@ -40,6 +40,25 @@
   .info-icon {
     @apply mx-auto mb-6 lg:mx-0 lg:mb-10;
   }
+
+  .article {
+    @apply flex max-w-md  flex-col gap-2 rounded-md bg-white hover:cursor-pointer;
+  }
+  .article-img {
+    @apply max-h-[12.5rem] rounded-t-md object-cover lg:min-h-[200px];
+  }
+  .article-content {
+    @apply flex flex-col gap-2 py-6 px-8 lg:p-6;
+  }
+  .article-author {
+    @apply text-[0.625rem] text-grayBlue;
+  }
+  .article-title {
+    @apply font-light text-darkBlue transition-colors duration-300 ease-out hover:text-limeGreen;
+  }
+  .article-text {
+    @apply text-[0.813rem] text-grayBlue;
+  }
 }
 .link-transition {
   transition: color 300ms ease-out;

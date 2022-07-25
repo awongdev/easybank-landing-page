@@ -86,7 +86,7 @@
       ></div>
     </nav>
 
-    <header class="flex flex-col bg-lightGray lg:block">
+    <header class="flex flex-col bg-lightGray">
       <img
         class="absolute top-8 z-10 max-h-[31.25rem] w-full object-cover md:top-0 md:max-h-[43.75rem] md:object-bottom lg:hidden"
         src="./images/bg-intro-mobile.svg"
@@ -103,7 +103,7 @@
         class="z-20 mx-auto -mt-16 max-w-md lg:absolute lg:left-[57%] lg:-mt-12 lg:max-w-none"
       >
         <img
-          class="drop-shadow-2xl lg:h-[56.313rem] lg:w-[45.75rem] lg:object-cover lg:object-left"
+          class="drop-shadow-xl lg:h-[56.313rem] lg:w-[45.75rem] lg:object-cover lg:object-left"
           src="./images/image-mockups.png"
           alt="Phones displaying EasyBank app"
         />
@@ -203,40 +203,85 @@
         </div>
       </section>
 
-      <section>
-        <h2>Latest Articles</h2>
-        <article>
-          <p>By Claire Robinson</p>
-          <h4>Receive money in any currency with no fees</h4>
-          <p>
-            The world is getting smaller and we’re becoming more mobile. So why
-            should you be forced to only receive money in a single …
-          </p>
-        </article>
-        <article>
-          <p>By Wilson Hutton</p>
-          <h4>Treat yourself without worrying about money</h4>
-          <p>
-            Our simple budgeting feature allows you to separate out your
-            spending and set realistic limits each month. That means you …
-          </p>
-        </article>
-        <article>
-          <p>By Wilson Hutton</p>
-          <h4>Take your Easybank card wherever you go</h4>
-          <p>
-            We want you to enjoy your travels. This is why we don’t charge any
-            fees on purchases while you’re abroad. We’ll even show you …
-          </p>
-        </article>
-        <article>
-          <p>By Claire Robinson</p>
-          <h4>Our invite-only Beta accounts are now live!</h4>
-          <p>
-            After a lot of hard work by the whole team, we’re excited to launch
-            our closed beta. It’s easy to request an invite through the site ...
-          </p>
-        </article>
+      <section class="flex w-full justify-center bg-lightGray py-[5.5rem] px-6">
+        <div class="max-w-[69.375rem]">
+          <h2 class="section-header mb-8 text-center lg:mb-10 lg:text-left">
+            Latest Articles
+          </h2>
+          <div class="flex flex-col gap-6 lg:flex-row">
+            <article class="article">
+              <img
+                class="article-img"
+                src="./images/image-currency.jpg"
+                alt="Image of money"
+              />
+              <div class="article-content">
+                <p class="article-author">By Claire Robinson</p>
+                <h4 class="article-title">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="article-text">
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a single
+                  …
+                </p>
+              </div>
+            </article>
+            <article class="article">
+              <img
+                class="article-img"
+                src="./images/image-restaurant.jpg"
+                alt="Image of food"
+              />
+              <div class="article-content">
+                <p class="article-author">By Wilson Hutton</p>
+                <h4 class="article-title">
+                  Treat yourself without worrying about money
+                </h4>
+                <p class="article-text">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you …
+                </p>
+              </div>
+            </article>
+            <article class="article">
+              <img
+                class="article-img"
+                src="./images/image-plane.jpg"
+                alt="Image of an airplane wing"
+              />
+              <div class="article-content">
+                <p class="article-author">By Wilson Hutton</p>
+                <h4 class="article-title">
+                  Take your Easybank card wherever you go
+                </h4>
+                <p class="article-text">
+                  We want you to enjoy your travels. This is why we don’t charge
+                  any fees on purchases while you’re abroad. We’ll even show you
+                  …
+                </p>
+              </div>
+            </article>
+            <article class="article">
+              <img
+                class="article-img"
+                src="./images/image-confetti.jpg"
+                alt="Image of confetti"
+              />
+              <div class="article-content">
+                <p class="article-author">By Claire Robinson</p>
+                <h4 class="article-title">
+                  Our invite-only Beta accounts are now live!
+                </h4>
+                <p class="article-text">
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite through
+                  the site ...
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
