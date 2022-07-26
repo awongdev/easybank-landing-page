@@ -1509,6 +1509,16 @@ html {
     padding-bottom: 6rem;
   }
 
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
   }
