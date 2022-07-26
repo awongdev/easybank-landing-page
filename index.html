@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d73bc91e2f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="main.js"></script>
     <title>EasyBank Landing Page</title>
@@ -24,7 +28,7 @@
     <nav>
       <div class="fixed inset-x-0 z-50 bg-white">
         <div
-          class="container z-50 mx-auto flex items-center justify-between px-6 py-[1.375rem] lg:h-20 lg:px-7 lg:py-0 xl:px-[10.313rem]"
+          class="container z-50 mx-auto flex items-center justify-between px-6 py-[1.375rem] lg:h-20 lg:px-6 lg:py-0 xl:px-[10.313rem]"
         >
           <a href="#"><img src="./images/logo.svg" alt="EasyBank logo" /></a>
           <ul
@@ -285,17 +289,46 @@
       </section>
     </main>
 
-    <footer class="hidden">
-      <ul>
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
-        <li>Support</li>
-        <li>Privacy Policy</li>
-      </ul>
-      <button>Request Invite</button>
-      <p>© Easybank. All Rights Reserved</p>
+    <footer class="bg-darkBlue">
+      <div
+        class="container mx-auto flex flex-col justify-center gap-8 py-10 px-6 text-center text-white lg:flex-row lg:justify-between lg:text-left xl:px-[10.313rem]"
+      >
+        <div class="mx-auto flex flex-col justify-between gap-8 lg:mx-0">
+          <a href="#">
+            <img
+              class="w-[139px]"
+              src="./images/logo-white.svg"
+              alt="EasyBank logo"
+            />
+          </a>
+          <div class="mx-auto flex gap-2 lg:gap-3">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-square footer-icon"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube footer-icon"></i></a
+            ><a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter footer-icon"></i></a
+            ><a href="https://pinterest.com" target="_blank"
+              ><i class="fa-brands fa-pinterest footer-icon"></i></a
+            ><a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram footer-icon"></i
+            ></a>
+          </div>
+        </div>
+        <ul class="grid gap-2 lg:grid-cols-2 lg:gap-x-20">
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Contact</a></li>
+          <li><a class="footer-link" href="#">Blog</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+          <li><a class="footer-link" href="#">Support</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="lg:text-right">
+          <button class="button mx-auto mb-6">Request Invite</button>
+          <p class="opacity-50">© Easybank. All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
