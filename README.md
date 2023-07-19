@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/AceDub/easybank-landing-page)
-- Live Site URL: [https://acedub.github.io/easybank-landing-page/](https://acedub.github.io/easybank-landing-page/)
+- Solution URL: [GitHub](https://github.com/awongdev/easybank-landing-page)
+- Live Site URL: [https://awongdev.github.io/easybank-landing-page/](https://awongdev.github.io/easybank-landing-page/)
 
 ## My process
 
@@ -43,4 +43,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@AceDub](https://www.frontendmentor.io/profile/AceDub)
-- GitHub - [@GitHub](https://github.com/AceDub)
+- GitHub - [@awongdev](https://github.com/awongdev)
